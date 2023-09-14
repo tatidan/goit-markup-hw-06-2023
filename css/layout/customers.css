@@ -2,13 +2,8 @@
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  gap: 16px;
-}
-
-@media only screen and (min-width: 768px) {
-  .customers-list {
-    gap: 24px;
-  }
+  row-gap: 72px;
+  column-gap: 16px;
 }
 
 .customers-list-item {
@@ -17,8 +12,18 @@
 }
 
 @media only screen and (min-width: 768px) {
+  .customers-list {
+    max-width: 768px;
+    column-gap: 24px;
+  }
   .customers-list-item {
     width: 168px;
+  }
+}
+@media only screen and (min-width: 1157px) {
+  .customers-list {
+    flex-wrap: wrap;
+    max-width: var(--desk);
   }
 }
 
