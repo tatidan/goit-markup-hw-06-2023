@@ -1,0 +1,20 @@
+@import '/css/utils/variables.css';
+
+@import '/css/base/common.css';
+@import '/css/base/container.css';
+@import '/css/base/section.css';
+
+@import '/css/layout/header.css';
+@import '/css/layout/hero.css';
+@import '/css/layout/advantages.css';
+@import '/css/layout/services.css';
+@import '/css/layout/team.css';
+
+@import '/css/layout/customers.css';
+@import '/css/layout/footer.css';
+
+@import '/css/layout/portfolio.css';
+
+@import '/css/layout/modal.css';
+@import '/css/layout/modalform.css';
+@import '/css/layout/mobilemenu.css';

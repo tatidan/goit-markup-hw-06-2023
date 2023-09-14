@@ -1,0 +1,110 @@
+.portfolio-section.section {
+  padding: 96px 0 120px 0;
+}
+
+.gallery-buttons {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 72px;
+}
+
+.gallery-button {
+  background-color: var(--light-color);
+  color: var(--primary-brand-color);
+  border: 1px solid var(--accent-color);
+  letter-spacing: 0.04em;
+  font-family: inherit;
+  font-weight: 500;
+  font-size: inherit;
+  line-height: inherit;
+  padding: 12px 24px;
+  border-radius: 4px;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.gallery-buttons > li:not(:last-child) {
+  margin-right: 24px;
+}
+
+.gallery-button:hover,
+.gallery-button:focus {
+  color: var(--white-color);
+  background-color: var(--pressed-state-color);
+  border-color: transparent;
+  box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.12),
+    0px 2px 1px 0px rgba(0, 0, 0, 0.08), 0px 3px 1px 0px rgba(0, 0, 0, 0.1);
+}
+
+.gallery-cards {
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 24px;
+  row-gap: 48px;
+}
+
+.gallery-card {
+  width: calc((100% - 48px) / 3);
+}
+
+.gallery-link {
+  display: block;
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.gallery-link:hover,
+.gallery-link:focus {
+  box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08),
+    0px 1px 1px 0px rgba(46, 47, 66, 0.16),
+    0px 1px 6px 0px rgba(46, 47, 66, 0.08);
+}
+
+.gallery-image-overlay {
+  position: relative;
+  overflow: hidden;
+}
+
+.overlay-description {
+  background-color: var(--primary-brand-color);
+  color: var(--light-color);
+  font-size: inherit;
+  line-height: inherit;
+  letter-spacing: 0.04em;
+  padding: 40px 32px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transform: translateY(100%);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.gallery-link:hover .overlay-description,
+.gallery-link:focus .overlay-description {
+  transform: translateY(0%);
+}
+
+.gallery-card-content {
+  padding: 32px 16px;
+  border: 1px solid var(--accent-color);
+  border-top: none;
+}
+
+.gallery-card-title {
+  font-size: 20px;
+  line-height: 1.2;
+  font-weight: 500;
+  letter-spacing: 0.02em;
+  color: var(--primary-black-color);
+  margin-bottom: 8px;
+}
+
+.gallery-card-desc {
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: var(--text-color);
+}

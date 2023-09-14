@@ -1,0 +1,16 @@
+:root {
+  --primary-black-color: #2e2f42;
+  --text-color: #434455;
+  --white-color: #ffffff;
+  --light-color: #f4f4fd;
+  --accent-color: #e7e9fc;
+  --secondary-white-color: #e5e5e5;
+  --lightslate: #8e8f99;
+  --primary-brand-color: #4d5ae5;
+  --pressed-state-color: #404bbf;
+
+  /* breakpoints */
+  --mob: 428px;
+  --tab: 768px;
+  --desk: 1158px;
+}

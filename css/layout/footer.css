@@ -1,0 +1,231 @@
+.footer {
+  background-color: var(--primary-black-color);
+  padding-top: 96px;
+  padding-bottom: 96px;
+}
+
+@media only screen and (min-width: 1158px) {
+  .footer {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+}
+
+/* ==========footer container========== */
+
+.footer .container {
+  display: flex;
+  flex-direction: column;
+  align-items: baseline;
+  gap: 72px;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1157px) {
+  .footer .container {
+    padding-left: 108px;
+  }
+}
+
+@media only screen and (min-width: 1158px) {
+  .footer .container {
+    flex-direction: row;
+    gap: 80px;
+  }
+}
+
+/* ========footer-logo-slogan-social======== */
+
+.footer-logo-slogan-social {
+  display: flex;
+  flex-direction: column;
+  gap: 72px;
+}
+
+.footer-slogan {
+  color: var(--light-color);
+  width: 268px;
+}
+
+.footer .logo.link {
+  display: inline-block;
+  margin-bottom: 18px;
+}
+
+@media screen and (max-width: 767px) {
+  .footer-logo-slogan-social {
+    width: 100%;
+  }
+  .footer-logo-slogan {
+    text-align: center;
+  }
+  .footer-slogan {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .footer-logo-slogan-social {
+    flex-direction: row;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1157px) {
+  .footer-logo-slogan-social {
+    gap: 24px;
+  }
+}
+
+@media only screen and (min-width: 1158px) {
+  .footer-logo-slogan-social {
+    gap: 120px;
+  }
+  .footer-slogan {
+    width: 264px;
+  }
+}
+
+/* =======footer-social-media======= */
+
+.footer-social-title {
+  color: var(--white-color);
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 0.32px;
+  margin-bottom: 16px;
+}
+
+@media screen and (max-width: 767px) {
+  .footer-social-title {
+    text-align: center;
+  }
+}
+
+.footer-social-list {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+}
+
+.footer-social-list-item {
+  width: 40px;
+  height: 40px;
+}
+
+.footer-social-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  padding: 8px;
+  border-radius: 50%;
+  background-color: var(--primary-brand-color);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.footer-social-link:hover,
+.footer-social-link:focus {
+  background-color: #31d0aa;
+}
+
+.footer-social-link .icon {
+  fill: var(--light-color);
+}
+
+/* =============FOOTER-FORM================== */
+
+.footer-cta-text {
+  color: var(--white-color);
+  font-family: inherit;
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  margin-bottom: 16px;
+}
+
+.footer-form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.footer-form-input {
+  font-family: inherit;
+  font-size: 12px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  padding: 8px 16px;
+  width: 100%;
+  height: 40px;
+  border-radius: 4px;
+  border: 1px solid var(--white-color);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  color: var(--white-color);
+  background-color: transparent;
+}
+
+@media screen and (max-width: 767px) {
+  .footer-form-part {
+    width: 100%;
+  }
+  .footer-cta-text {
+    text-align: center;
+  }
+  .footer-cta-button {
+    align-self: center;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .footer-form {
+    flex-direction: row;
+    gap: 24px;
+  }
+  .footer-form-input {
+    width: 264px;
+  }
+}
+
+.footer-form-input::placeholder {
+  font-family: inherit;
+  font-size: 12px;
+  line-height: 2;
+  letter-spacing: 0.04em;
+  color: var(--white-color);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.footer-form-input:focus::placeholder {
+  color: transparent;
+}
+
+.footer-cta-button {
+  font-family: inherit;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  background-color: var(--primary-brand-color);
+  color: var(--white-color);
+  width: 165px;
+  height: 40px;
+  padding: 8px 24px;
+  border-radius: 4px;
+  border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.footer-cta-button:hover,
+.footer-cta-button:focus {
+  background-color: var(--pressed-state-color);
+}
+
+.footer-cta-button .icon {
+  fill: currentColor;
+  margin-left: 16px;
+}
